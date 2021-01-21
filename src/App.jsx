@@ -33,10 +33,10 @@ export default class App extends React.Component {
 
   selectAnswer = (selectedAnswer, nextQuestionId) => {
     switch(true) {
-      case (nextQuestionId === 'init')
+      case (nextQuestionId === 'init'):
         this.displayNextQuestion(nextQuestionId)
         break;
-    default:
+      default:
 
         const chats = this.state.chats;
         chats.push({
@@ -56,7 +56,7 @@ export default class App extends React.Component {
 
   componentDidMount() {
     const initAnswer = "";
-    this.selectAnswer(initAnswer, this,state.currentId)
+    this.selectAnswer(initAnswer, this.state.currentId)
   }
 
   render() {
