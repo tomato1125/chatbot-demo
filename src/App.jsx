@@ -33,7 +33,7 @@ export default class App extends React.Component {
 
   selectAnswer = (selectedAnswer, nextQuestionId) => {
     switch(true) {
-      case (nextQuestionId === 'init'):
+      case (nextQuestionId === 'init')
         this.displayNextQuestion(nextQuestionId)
         break;
       default:
